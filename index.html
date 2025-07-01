@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P2-TM02</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 2 - 2º Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 2</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Misión / Tema Principal: Movimiento y Coordenadas: ¡El Mapa del Tesoro!</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a controlar el movimiento de un sprite utilizando los bloques mover, girar, y que comprendan el concepto básico de coordenadas (x, y) como una dirección en el escenario para usar el bloque ir a x:y:.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ La Chispa de la Idea: Presenta el reto de mover al personaje como una búsqueda del tesoro.</li>
+                                        <li>⚡ El Plan en el Suelo: Explica los bloques de movimiento y el concepto de coordenadas X/Y en la pizarra.</li>
+                                        <li>⚡ ¡Yo Soy el Robot!: Dramatiza el movimiento del personaje siguiendo el plan de coordenadas.</li>
+                                        <li>⚡ Del Suelo a la Pantalla: Guía a los alumnos para programar el movimiento en Pictoblox.</li>
+                                        <li>⚡ Círculo de Creación: Cierra la sesión celebrando los caminos creados y reforzando el concepto de coordenadas.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en Pictoblox que utiliza los bloques `ir a x:y:`, `mover` y `girar` para hacer que un sprite siga una ruta predefinida en el escenario.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector</li>
+                                        <li>Computadoras o tabletas con Pictoblox abierto</li>
+                                        <li>Pizarra o rotafolio</li>
+                                        <li>Marcadores</li>
+                                        <li>Cinta adhesiva para crear una cruz en el suelo (opcional)</li>
+                                    </ul>
+                                    <strong>Preparación Previa:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (Pictoblox).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Preparación de Materiales:</strong> Tener listos los materiales unplugged (pizarra, marcadores, cinta) para las actividades conceptuales.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: La Chispa de la Idea (Vibe Grupal) ⏰ 5 minutos</h2>
+                <p>Generar entusiasmo, presentar el reto o 'vibe' de la misión del día y conectar con las experiencias previas de los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Problema Inicial ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2) Inicia la clase señalando que el personaje está aburrido y proponiendo darle el poder de moverse.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Hola, super-directores! Nuestro personaje ya sabe presentarse y saludar, ¡pero está un poco aburrido siempre en el mismo sitio! ¿Qué les parece si hoy le damos el poder de moverse por todo el escenario?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Reto del Mapa ⏰ 1.5 minutos</h3>
+                            <p>Plantea el reto del día usando la analogía de un mapa del tesoro, enfatizando la necesidad de dar instrucciones precisas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Plantea un reto) "Imaginen que el escenario es un gran mapa y queremos guiar a nuestro sprite hacia un tesoro escondido. Para eso, no podemos decirle 'muévete por ahí', ¡necesitamos darle instrucciones súper precisas!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Establecer la "Vibe" del Día ⏰ 2 minutos</h3>
+                            <p>Declara la "vibe" de la sesión ("Somos exploradores creando un mapa del tesoro") y lanza el llamado a la acción para la aventura.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Nuestra 'vibe' de hoy es: 'Somos exploradores creando un mapa del tesoro'. Le enseñaremos a nuestro personaje a seguir nuestras órdenes de movimiento al pie de la letra. ¿Listos para la aventura?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Plan en el Suelo (Algoritmo Kinestésico y Conceptual) ⏰ 10 minutos</h2>
+                <p>Introducir los conceptos, herramientas y el algoritmo de la sesión de forma conceptual y kinestésica, usando la pizarra y analogías.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introduciendo el Movimiento Simple ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Dibuja en la pizarra los bloques `mover` y `girar`, explicando su función básica con analogías de caminar y girar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Excelente, exploradores! Ahora que tenemos nuestra misión, lo primero es trazar el mapa. Vamos a crear nuestro <strong>plan en el suelo</strong>, usando la pizarra como nuestro terreno."</p>
+                                <p class="dialogue assistant">"Para mover a nuestro sprite, tenemos dos instrucciones básicas. La primera es mover pasos. Es como dar pasos hacia adelante." (Dibuja un bloque azul de mover 10 pasos en la pizarra).</p>
+                                <p class="dialogue assistant">"La segunda es girar grados. Es como girar nuestro cuerpo para cambiar de dirección antes de seguir caminando." (Dibuja un bloque azul de girar 15 grados).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Introduciendo el Mapa Secreto (Coordenadas) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) Dibuja una cruz grande en la pizarra para explicar los ejes X e Y. Introduce la "palabra secreta" COORDENADAS como una dirección exacta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Dibuja una gran cruz en el centro de la pizarra) "¡Este es nuestro mapa secreto! La línea horizontal que va de lado a lado se llama el eje X. La línea vertical que va de arriba a abajo se llama el eje Y."</p>
+                                <p class="dialogue assistant">"El punto exacto donde se cruzan las líneas es el centro de nuestro mundo, el punto x:0, y:0. Desde ahí, si le damos un número X positivo, se moverá a la derecha. Si le damos un X negativo, se moverá a la izquierda." (Dibuja flechas para ilustrarlo). "Con la Y, si es positiva, va hacia arriba, y si es negativa, va hacia abajo."</p>
+                                <p class="dialogue assistant">"¡Esta combinación de un número X y un número Y es una coordenada! Es nuestra segunda palabra secreta. Una coordenada es como una dirección súper exacta en nuestro mapa. ¡Le dice al sprite el punto preciso al que debe teletransportarse!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Construyendo el Plan (El Algoritmo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Escribe la secuencia de bloques en la pizarra para que los alumnos vean la ruta del tesoro clara y ordenada.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Nuestro plan para la exploración de hoy será:"</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">1. "Primero, para empezar la aventura, el sprite irá al centro del mapa: ir a x:0 y:0."
+2. "Luego, dará 100 pasos hacia adelante: mover 100 pasos."
+3. "Después, hará un giro de esquina, como en una calle: girar 90 grados."
+4. "Finalmente, caminará un poco más: mover 50 pasos."</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: ¡Yo Soy el Robot! (Simulación Humana) ⏰ 5 minutos</h2>
+                <p>Reforzar la comprensión del algoritmo a través de una simulación física y dramatizada, donde los alumnos actúan como el 'robot' y el 'programador'.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Asignación de Roles ⏰ 1 minuto</h3>
+                            <p>Invita a un voluntario para ser el "Sprite Explorador". La clase actuará como los "Programadores" que dan las órdenes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Muy bien! Ya tenemos nuestro plan en la pizarra. Pero, ¿funcionará? Antes de dárselo a la computadora, vamos a probarlo nosotros mismos. Ahora, <strong>¡yo soy el robot!</strong> O mejor dicho... ¡necesito un voluntario que actúe como nuestro robot explorador!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ejecución de la Simulación ⏰ 4 minutos</h3>
+                            <p>Guía a la clase para que griten cada instrucción del guion en la pizarra, y al "Sprite Explorador" para que ejecute los movimientos físicos correspondientes. Cierra la actividad reforzando el éxito del plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Dirige a la clase para gritar las instrucciones en orden: "¡Ve a X:0, Y:0!", "¡Mueve 100 pasos!", etc., mientras el alumno actor se mueve).</p>
+                                <p class="dialogue assistant">"¡Miren eso! El explorador siguió el camino exacto que planeamos. ¡Nuestro mapa funciona!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Del Suelo a la Pantalla (Implementación Guiada) ⏰ 15 minutos</h2>
+                <p>Guiar a los estudiantes en la implementación práctica del plan en la plataforma de programación, siguiendo un modelo paso a paso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Encontrar los Bloques de Movimiento ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Pide a los estudiantes que abran Pictoblox y dirígelos a la paleta de "Movimiento" de color azul.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Fantástico! Nuestro plan funcionó en el mundo real. Eso significa que estamos listos para el gran paso: llevar nuestro mapa <strong>del suelo a la pantalla</strong>. ¡Es hora de darle las instrucciones a la computadora!"</p>
+                                <p class="dialogue assistant">"¡Ahora a darle el mapa a nuestro sprite en la computadora!"</p>
+                                <p class="dialogue assistant">"Todos los bloques para mover a nuestro personaje son de color azul. Vamos a la paleta de Movimiento."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Construir el Guion ⏰ 8 minutos</h3>
+                            <p>Guía paso a paso la construcción del código: arrastrar el evento de bandera verde, luego los bloques `ir a x:y:`, `mover`, `girar` y el segundo `mover`, indicando cómo cambiar los valores numéricos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Primero, arrastren el evento al presionar bandera verde."</p>
+                                 <p class="dialogue assistant">"De la paleta azul, arrastren ir a x: ... y: ... y asegúrense de que los números sean 0 y 0."</p>
+                                 <p class="dialogue assistant">"Ahora, conecten debajo el bloque mover 10 pasos. Hagan clic en el 10 y cámbienlo por 100."</p>
+                                 <p class="dialogue assistant">"Luego, conecten el bloque girar 15 grados. Hagan clic en el 15 y cámbienlo por 90."</p>
+                                 <p class="dialogue assistant">"Finalmente, añadan otro bloque de mover ... pasos y pónganle 50."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: ¡A Explorar! ⏰ 5 minutos</h3>
+                            <p>Anima a los estudiantes a presionar la bandera verde para ver el resultado. Luego, motívalos a experimentar cambiando los números de los bloques para ver qué nuevos caminos pueden crear.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¿Listos para la acción? ¡Presionen la bandera verde! Vean a su sprite dibujar el camino que programaron."</p>
+                                <p class="dialogue assistant">"¡Ahora experimenten! Cambien los números. ¿Qué pasa si en girar ponen 180? ¿Y si en mover ponen un número negativo como -50?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Círculo de Creación (Reflexión y Cierre) ⏰ 5 minutos</h2>
+                <p>Cerrar la sesión con una reflexión grupal, celebrar los logros, reforzar los conceptos clave y conectar con la próxima misión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Celebración y Repaso de Conceptos ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Felicita a los estudiantes por su logro y guía un repaso interactivo para que ellos mismos digan la "palabra secreta" del día (COORDENADAS).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Genial, veo que todos han creado caminos increíbles! Para terminar nuestra misión de hoy, vamos a juntarnos en nuestro <strong>círculo de creación</strong> para celebrar lo que hemos logrado y compartir nuestros descubrimientos."</p>
+                                <p class="dialogue assistant">"¡Lo han logrado! ¡Se han convertido en maestros del movimiento! Repasemos la palabra secreta más importante de hoy:"</p>
+                                <p class="dialogue assistant">"¿Cómo se llama esa dirección súper exacta que usa un número 'x' y un número 'y'?" (Espera la respuesta del grupo: ¡COORDENADAS!)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Final ⏰ 2 minutos</h3>
+                            <p>Cierra la sesión reforzando la importancia de las coordenadas como un "superpoder" de programador y celebra su nuevo rol como "exploradores de código".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Saber usar coordenadas es un superpoder de programador. Les permite colocar cualquier cosa en cualquier lugar exacto de la pantalla. ¡Han aprendido a darle a su sprite la libertad de explorar su mundo! ¡Felicidades, exploradores de código!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
